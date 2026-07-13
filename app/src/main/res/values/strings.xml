@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Stochastic Reminder</string>
+    <string name="app_name" translatable="false">Micro Stochastic Reminder</string>
 
     <string name="edit_screen_name">Edit Reminder</string>
     <string name="new_screen_name">New Reminder</string>

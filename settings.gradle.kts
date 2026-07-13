@@ -20,6 +20,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Stochastic Reminder"
+rootProject.name = "MicroStochasticReminder"
 include(":app")
  

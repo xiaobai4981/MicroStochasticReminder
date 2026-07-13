@@ -2,7 +2,7 @@
 <resources>
     <style name="Theme.StochaPop.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/splash_background</item>
-        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/storeicon</item>
         <item name="postSplashScreenTheme">@style/Theme.StochaPop</item>
     </style>
 
