@@ -111,6 +111,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavType
 import androidx.navigation.navArgument
 import cc.polysfaer.stochapop.R
+import cc.polysfaer.stochapop.ads.AdManager
 import cc.polysfaer.stochapop.controller.NotificationChannels.hasPostNotificationPermission
 import cc.polysfaer.stochapop.controller.sendNotification
 import cc.polysfaer.stochapop.data.reminder.ReminderSettings
@@ -449,7 +450,19 @@ fun EditScreenContent(
                 },
                 onConfirmation = {
                     showDeletionConfirmDialog = false
-                    actions.onDeleteButtonClick()
+                    val activity = context as? Activity
+
+                    if (activity != null) {
+                        AdManager.maybeShowAd(
+                            activity = activity,
+                            adRate = 0.8,
+                            afterAdClosed = {
+                                actions.onDeleteButtonClick()
+                            }
+                        )
+                    } else {
+                        actions.onDeleteButtonClick()
+                    }
                 }
             )
         }

@@ -17,6 +17,13 @@
         android:roundIcon="@drawable/storeicon"
         android:supportsRtl="true"
         android:theme="@style/Theme.StochaPop">
+        <!--TODO 将sampleID换为正式ID -->
+        <!-- 依次是测试和正式 AdMob app ID :
+        ca-app-pub-3940256099942544~3347511713
+        ca-app-pub-3202140189215424~7413383288-->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3202140189215424~7413383288"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
