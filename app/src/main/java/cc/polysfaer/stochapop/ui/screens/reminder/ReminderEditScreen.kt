@@ -455,7 +455,7 @@ fun EditScreenContent(
                     if (activity != null) {
                         AdManager.maybeShowAd(
                             activity = activity,
-                            adRate = 0.8,
+                            adRate = 0.2,
                             afterAdClosed = {
                                 actions.onDeleteButtonClick()
                             }
